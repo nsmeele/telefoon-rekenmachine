@@ -38,7 +38,7 @@
 						<div class="row">
 							<div class="col-md-3">
 								<label for="abonnementsduur">Abonnementsduur in maanden	</label>
-								<input type="number" class="form-control" step="6" id="abonnementsduur">
+								<input type="number" class="form-control" step="6" id="abonnementsduur" value="24">
 							</div>
 							<div class="col-md-4">
 								<label>Soort telefoonabonnement</label>
@@ -53,9 +53,6 @@
 						<div class="row">
 							<div class="col-md-4">
 								<label for="aanbieder">Aanbieder</label>
-								<a href="#" title="Meer uitleg" data-toggle="popover" data-placement="right" data-content="Vul hier de aanbieder van het abonnement wat u wil vergelijken">
-								  <i class="fa fa-question-circle" aria-hidden="true"></i>
-								</a>
 								<input type="text" class="form-control" id="aanbieder">
 							</div>
 							<div class="col-md-4">				
@@ -86,14 +83,14 @@
 								<label for="toestelprijs">Toestelprijs</label>
 							    <div class="input-group"> 
 							        <span class="input-group-addon"></span>
-							        <input type="number" class="form-control" id="toestelprijs" max="1500" step="5" class="form-control currency" />
+							        <input type="number" class="form-control" id="toestelprijs" max="1500" step="5" value="0" class="form-control currency" />
 							    </div>
 							</div>
 							<div class="col-md-6">
 								<label for="eenmalige_kosten">Eenmalige extra kosten</label>
 							    <div class="input-group"> 
 							        <span class="input-group-addon"></span>
-							        <input type="number" class="form-control" id="eenmalige_kosten" max="1500" step="5" class="form-control currency" />
+							        <input type="number" class="form-control" id="eenmalige_kosten" max="1500" step="5" value="0" class="form-control currency" />
 							    </div>
 							</div>
 						</div>
@@ -104,28 +101,28 @@
 								<label for="abonnement_p_m">Abonnement p/m</label>
 							    <div class="input-group"> 
 							        <span class="input-group-addon"></span>
-							        <input type="number" class="form-control" id="abonnement_p_m" ng-model="abonnement_p_m" max="100" step="5" class="form-control currency" />
+							        <input type="number" class="form-control" id="abonnement_p_m" ng-model="abonnement_p_m" max="135" step="5" value="10" class="form-control currency" />
 							    </div>
 							</div>
 							<div class="col-md-2">
 								<label for="abonnementprijs_totaal">Abonnementprijs totaal</label>
 							    <div class="input-group"> 
 							        <span class="input-group-addon"></span>
-							        <input type="number"  class="form-control" readonly id="abonnementprijs_totaal" value="{{ abonnement_p_m * abonnementsduur }}">
+							        <input type="number"  class="form-control" readonly id="abonnementprijs_totaal" value="">
 							    </div>
 						    </div>
 							<div class="col-md-2">
 								<label for="extra_p_m">Extra optie p/m</label>
 							    <div class="input-group"> 
 							        <span class="input-group-addon"></span>
-							        <input type="number" class="form-control" id="extra_p_m" ng-model="extra_p_m" max="100" step="5" class="form-control currency" />
+							        <input type="number" class="form-control" id="extra_p_m" max="100" step="5" class="form-control currency" value="0" />
 							    </div>
 							</div>
 							<div class="col-md-2">
 								<label for="extra_optie_totaal">Extra optie totaal</label>
 							    <div class="input-group"> 
 							        <span class="input-group-addon"></span>
-							        <input type="number"  class="form-control" readonly="" id="extra_optie_totaal" value="{{ extra_p_m * abonnementsduur }}">
+							        <input type="number"  class="form-control" readonly="" id="extra_optie_totaal" value="}">
 							    </div>
 							</div>						
 						</div>
@@ -141,14 +138,14 @@
 								<label for="totaalprijs">Totaalprijs</label>
 							    <div class="input-group"> 
 							        <span class="input-group-addon"></span>
-							        <input type="text"  class="form-control" readonly="" id="totaalprijs" value="">
+							        <input type="text"  class="form-control" readonly="" id="totaalprijs" value="0">
 							    </div>
 							</div>
 							<div class="col-md-3">
 								<label for="gem_p_m">Gemiddeld per maand</label>
 							    <div class="input-group"> 
 							        <span class="input-group-addon"></span>
-							        <input type="text"  class="form-control" readonly="" id="gem_p_m" value="">
+							        <input type="text"  class="form-control" readonly="" id="gem_p_m" value="0">
 							    </div>
 							</div>
 						</div>
