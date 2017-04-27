@@ -16,7 +16,7 @@
 		<div class="container">
 			<div class="row">
 				<h1>Reken en vergelijk!</h1>
-				<h4>Kostenvrij telefoonabonnementen vergelijken.</h4>
+				<h2>Kostenvrij telefoonabonnementen vergelijken.</h2>
 				<p>Altijd het gevoel dat Sim Only aanzienlijk goedkoper is dan een telefoon met abonnement? Vind het hier uit! Vul de gegevens in en wij rekenen het <strong>kostenloos</strong> voor u uit. Gegevens worden niet opgeslagen, dat interesseert me namelijk niets. Of dit in de toekomst zo blijft is nog onzeker.</p>
 			</div>
 		</div>
