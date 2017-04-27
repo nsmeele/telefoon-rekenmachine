@@ -17,11 +17,12 @@ $(document).ready(function() {
 		    var bereken_abonnementprijs_totaal = abonnementsduur*abonnement_p_m;
 		    var bereken_extra_optie_totaal = abonnementsduur*extra_p_m;
 		    var bereken_totaalprijs = bereken_abonnementprijs_totaal+bereken_extra_optie_totaal;
+		    var bereken_eenmalige_kosten = toestelprijs+eenmalige_kosten;
 
 
 		    $( "input#abonnementprijs_totaal" ).val( bereken_abonnementprijs_totaal );
 		    $( "input#extra_optie_totaal" ).val( bereken_extra_optie_totaal );
-			$( "input#totaalprijs" ).val( bereken_totaalprijs );
+			// $( "input#totaalprijs" ).val( bereken_eenmalige_kosten );
 
 			// console.log( toestelprijs );
 
