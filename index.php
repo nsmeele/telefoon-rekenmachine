@@ -8,6 +8,7 @@
   <link id="bootstrap" rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <!-- <link id="font-awesome" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">   -->
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
   <link id="main-stylesheet" rel="stylesheet" href="assets/css/main.css"> 
 </head>
 <body>
@@ -37,7 +38,7 @@
 						<div class="row">
 							<div class="col-md-3">
 								<label for="abonnementsduur">Abonnementsduur in maanden	</label>
-								<input type="number" class="form-control" step="6" ng-model="abonnementsduur" id="abonnementsduur">
+								<input type="number" class="form-control" step="6" id="abonnementsduur">
 							</div>
 							<div class="col-md-4">
 								<label>Soort telefoonabonnement</label>
