@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <link id="bootstrap" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link id="bootstrap" rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <!-- <link id="font-awesome" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">   -->
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <link id="main-stylesheet" rel="stylesheet" href="css/main.css"> 
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <link id="main-stylesheet" rel="stylesheet" href="assets/css/main.css"> 
 </head>
 <body>
 
@@ -24,7 +24,7 @@
 
 
 
-	<div id="content" ng-app="">
+	<div id="content">
 		<div class="container">
 			<div class="row">
 
