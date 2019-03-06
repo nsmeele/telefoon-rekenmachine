@@ -76,11 +76,15 @@
 					<div class="row">
 						<div class="col-md-6">
 							<label for="toestelprijs">Toestelprijs</label>
-						    <div class="input-group"> 
-						        <span class="input-group-addon">&euro;</span>
-						        <input type="number" class="form-control" id="toestelprijs" max="1500" step="5" class="form-control currency" onblur="bereken()"/>
-						    </div>
-						</div>
+
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-euro-sign"></i></span>
+                                </div>
+                                <input type="number" id="toestelprijs" max="1500" step="5" class="form-control" onblur="bereken()"/>
+                            </div>
+
+                        </div>
 						<div class="col-md-6">
 							<label for="eenmalige_kosten">Eenmalige extra kosten</label>
 						    <div class="input-group"> 
