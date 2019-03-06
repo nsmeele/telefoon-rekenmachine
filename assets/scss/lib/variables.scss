@@ -1,6 +1,13 @@
 html {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 $primary: #0d47a1;
-$secondary: #ff6f00;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1300px
+) !default;
+
