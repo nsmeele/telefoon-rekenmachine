@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
     <script type="text/javascript" src="assets/js/math.js"></script>
@@ -39,41 +45,33 @@
                             </div>
                         </div>
 
+                        <h2>Aanvullende instellingen (optioneel)</h2>
+                        <p class="text-muted">Onderstaande instellingen zijn niet verplicht om in te vullen maar helpen voor jezelf om straks een goed overzicht te krijgen.</p>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <label for="aanbieder">Aanbieder</label>
-                                <a href="#" onclick="return false;" title="Meer uitleg" data-toggle="popover"
-                                   data-placement="right"
-                                   data-content="Vul hier de aanbieder van het abonnement wat u wil vergelijken">
-                                    <i class="fas fa-question-circle"></i>
-                                </a>
-                                <input type="text" class="form-control" id="aanbieder">
+                                <label class="d-block">
+                                    Aanbieder<br>
+                                    <span class="text-muted font-italic">Bijvoorbeeld: T-Mobile</span><br>
+                                    <input type="text" class="form-control" id="aanbieder">
+                                </label>
                             </div>
                             <div class="col-md-4">
-                                <label for="telefoon">Telefoon type</label>
-                                <a href="#" title="Meer uitleg" data-toggle="popover" data-placement="right"
-                                   data-content="Een korte omschrijving van de telefoon die je wil aanschaffen">
-                                    <i class="fas fa-question-circle"></i>
-                                </a>
-                                <input type="text" class="form-control" id="telefoon">
+                                <label class="d-block">
+                                    Telefoonnaam<br>
+                                    <span class="text-muted font-italic">Bijvoorbeeld: OnePlus 5T</span><br>
+                                    <input type="text" class="form-control" id="telefoon">
+                                </label>
                             </div>
                             <div class="col-md-4">
-                                <label for="abonnement_omschrijving">Abonnement beschrijving</label>
-                                <p>Bijvoorbeeld: 2GB + 100 minuten bellen</p>
-                                <a href="#" title="Meer uitleg" data-toggle="popover" data-placement="right"
-                                   data-content="Een korte omschrijving van het abonnement">
-                                    <i class="fas fa-question-circle"></i>
-                                </a>
-                                <input type="text" class="form-control" id="abonnement_omschrijving">
+                                <label class="d-block">
+                                    Abonnement beschrijving<br>
+                                    <span class="text-muted font-italic">Bijvoorbeeld: 2GB + 100 minuten bellen</span><br>
+                                    <input type="text" class="form-control" id="abonnement_omschrijving">
+                                </label>
                             </div>
                         </div>
 
                         <h2>Kosten</h2>
-                        <div class="alert alert-info">
-                            <strong>Let op!</strong> Abonnementsprijs per maand invullen <strong>zonder</strong> kortingen. Deze
-                            kun je later alsnog invullen
-                        </div>
-
                         <div class="form-group row">
                             <div class="col-md col-12">
                                 <label for="toestelprijs">Toestelprijs</label>
@@ -98,7 +96,6 @@
                             </div>
                         </div>
                         <div class="form-group row">
-
                             <div class="col-md col-12">
                                 <label for="abonnement_p_m">Abonnement p/m</label>
                                 <div class="input-group ">
@@ -110,24 +107,29 @@
                                 </div>
                             </div>
                             <div class="col-md col-12">
-                                <label for="abonnementprijs_totaal">Abonnementprijs totaal</label>
-
-                                <div class="input-group ">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">&euro;</span>
+                                <label>
+                                    Abonnementprijs totaal<br>
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">&euro;</span>
+                                        </div>
+                                        <input type="number" class="form-control" readonly id="abonnementprijs_totaal" value="">
                                     </div>
-                                    <input type="number" class="form-control" readonly id="abonnementprijs_totaal" value="">
-                                </div>
+                                </label>
                             </div>
                             <div class="col-md col-12">
-                                <label for="extra_p_m">Extra optie p/m</label>
-                                <div class="input-group ">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">&euro;</span>
+
+                                <label>
+                                    Extra optie p/m<br>
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">&euro;</span>
+                                        </div>
+                                        <input type="number" id="extra_p_m" max="100" step="5" class="form-control"
+                                               onblur="bereken()"/>
                                     </div>
-                                    <input type="number" id="extra_p_m" max="100" step="5" class="form-control"
-                                           onblur="bereken()"/>
-                                </div>
+                                </label>
+
                             </div>
                             <div class="col-md col-12">
                                 <label for="extra_optie_totaal">Extra optie totaal</label>
@@ -151,25 +153,27 @@
                         <div class="form-group row">
 
                             <div class="col-md col-12">
-                                <label for="totaalprijs">Totaalprijs</label>
 
-                                <div class="input-group ">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">&euro;</span>
+                                <label class="d-block">
+                                    Totaalprijs<br>
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">&euro;</span>
+                                        </div>
+                                        <input type="number" class="form-control" readonly="" id="totaalprijs" value="">
                                     </div>
-                                    <input type="number" class="form-control" readonly="" id="totaalprijs" value="">
-                                </div>
-
+                                </label>
                             </div>
                             <div class="col-md col-12">
-                                <label for="gem_p_m">Gemiddeld per maand</label>
-
-                                <div class="input-group ">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">&euro;</span>
+                                <label class="d-block">
+                                    Gemiddeld per maand<br>
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">&euro;</span>
+                                        </div>
+                                        <input type="number" class="form-control" readonly="" id="gem_p_m" value="">
                                     </div>
-                                    <input type="number" class="form-control" readonly="" id="gem_p_m" value="">
-                                </div>
+                                </label>
                             </div>
 
                         </div>
@@ -203,21 +207,21 @@
                                 <tr>
                                     <td>&euro; 41,67</td>
                                     <td>24</td>
-                                    <td>&euro; 1000,000</td>
+                                    <td>&euro; 1000,00</td>
                                     <td>Aanbieder</td>
                                     <td>2GB + 150 minuten</td>
                                 </tr>
                                 <tr>
                                     <td>&euro; 41,67</td>
                                     <td>24</td>
-                                    <td>&euro; 1000,000</td>
+                                    <td>&euro; 1000,00</td>
                                     <td>Aanbieder</td>
                                     <td>2GB + 150 minuten</td>
                                 </tr>
                                 <tr>
                                     <td>&euro; 41,67</td>
                                     <td>24</td>
-                                    <td>&euro; 1000,000</td>
+                                    <td>&euro; 1000,00</td>
                                     <td>Aanbieder</td>
                                     <td>2GB + 150 minuten</td>
                                 </tr>
