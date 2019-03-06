@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link id="bootstrap" rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-	<link id="font-awesome" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">  
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
 	<script type="text/javascript" src="assets/js/math.js"></script>
 </head>
 <body>
