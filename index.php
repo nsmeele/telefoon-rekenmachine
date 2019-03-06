@@ -25,49 +25,45 @@
                 <p class="text-muted">Zorgvuldig invullen zorgt voor het beste resultaat</p>
 
 
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <label for="abonnementsduur">Abonnementsduur in maanden </label>
-                            <input type="number" class="form-control" step="6" id="abonnementsduur" onblur="bereken()">
-                        </div>
-                        <div class="col-md-4">
-                            <label>Soort telefoonabonnement</label>
-                            <div class="clr"></div>
-                            <label class="radio-inline"><input type="radio" name="soort_abonnement" checked="">Abonnement
-                                met telefoon</label>
-                            <label class="radio-inline"><input type="radio" name="soort_abonnement">Sim Only</label>
-                        </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <label for="abonnementsduur">Abonnementsduur in maanden </label>
+                        <input type="number" class="form-control" step="6" id="abonnementsduur" onblur="bereken()">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Soort telefoonabonnement</label>
+                        <div class="clr"></div>
+                        <label class="radio-inline"><input type="radio" name="soort_abonnement" checked="">Abonnement
+                            met telefoon</label>
+                        <label class="radio-inline"><input type="radio" name="soort_abonnement">Sim Only</label>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="aanbieder">Aanbieder</label>
-                            <a href="#" onclick="return false;" title="Meer uitleg" data-toggle="popover"
-                               data-placement="right"
-                               data-content="Vul hier de aanbieder van het abonnement wat u wil vergelijken">
-                                <i class="fas fa-question-circle"></i>
-                            </a>
-                            <input type="text" class="form-control" id="aanbieder">
-                        </div>
-                        <div class="col-md-4">
-                            <label for="telefoon">Telefoon type</label>
-                            <a href="#" title="Meer uitleg" data-toggle="popover" data-placement="right"
-                               data-content="Een korte omschrijving van de telefoon die je wil aanschaffen">
-                                <i class="fas fa-question-circle"></i>
-                            </a>
-                            <input type="text" class="form-control" id="telefoon">
-                        </div>
-                        <div class="col-md-4">
-                            <label for="abonnement_omschrijving">Abonnement</label>
-                            <a href="#" title="Meer uitleg" data-toggle="popover" data-placement="right"
-                               data-content="Een korte omschrijving van het abonnement">
-                                <i class="fas fa-question-circle"></i>
-                            </a>
-                            <input type="text" class="form-control" id="abonnement_omschrijving">
-                        </div>
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <label for="aanbieder">Aanbieder</label>
+                        <a href="#" onclick="return false;" title="Meer uitleg" data-toggle="popover"
+                           data-placement="right"
+                           data-content="Vul hier de aanbieder van het abonnement wat u wil vergelijken">
+                            <i class="fas fa-question-circle"></i>
+                        </a>
+                        <input type="text" class="form-control" id="aanbieder">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="telefoon">Telefoon type</label>
+                        <a href="#" title="Meer uitleg" data-toggle="popover" data-placement="right"
+                           data-content="Een korte omschrijving van de telefoon die je wil aanschaffen">
+                            <i class="fas fa-question-circle"></i>
+                        </a>
+                        <input type="text" class="form-control" id="telefoon">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="abonnement_omschrijving">Abonnement</label>
+                        <a href="#" title="Meer uitleg" data-toggle="popover" data-placement="right"
+                           data-content="Een korte omschrijving van het abonnement">
+                            <i class="fas fa-question-circle"></i>
+                        </a>
+                        <input type="text" class="form-control" id="abonnement_omschrijving">
                     </div>
                 </div>
 
@@ -77,109 +73,107 @@
                     kun je later alsnog invullen
                 </div>
 
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label for="toestelprijs">Toestelprijs</label>
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <label for="toestelprijs">Toestelprijs</label>
 
-                            <div class="input-group ">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">&euro;</span>
-                                </div>
-                                <input type="number" id="toestelprijs" max="1500" step="5" class="form-control"
-                                       onblur="bereken()"/>
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&euro;</span>
                             </div>
-
+                            <input type="number" id="toestelprijs" max="1500" step="5" class="form-control"
+                                   onblur="bereken()"/>
                         </div>
-                        <div class="col-md-6">
-                            <label for="eenmalige_kosten">Eenmalige extra kosten</label>
-                            <div class="input-group ">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">&euro;</span>
-                                </div>
-                                <input type="number" id="eenmalige_kosten" max="1500" step="5" class="form-control"
-                                       onblur="bereken()"/>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="eenmalige_kosten">Eenmalige extra kosten</label>
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&euro;</span>
                             </div>
+                            <input type="number" id="eenmalige_kosten" max="1500" step="5" class="form-control"
+                                   onblur="bereken()"/>
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <label for="abonnement_p_m">Abonnement p/m</label>
-                            <div class="input-group ">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">&euro;</span>
-                                </div>
-                                <input type="number" id="abonnement_p_m" max="100" step="5" class="form-control"
-                                       onblur="bereken()"/>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="abonnementprijs_totaal">Abonnementprijs totaal</label>
+                <div class="form-group row">
 
-                            <div class="input-group ">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">&euro;</span>
-                                </div>
-                                <input type="number" class="form-control" readonly id="abonnementprijs_totaal" value="">
+                    <div class="col-md-3">
+                        <label for="abonnement_p_m">Abonnement p/m</label>
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&euro;</span>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="extra_p_m">Extra optie p/m</label>
-                            <div class="input-group ">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">&euro;</span>
-                                </div>
-                                <input type="number" id="extra_p_m" max="100" step="5" class="form-control"
-                                       onblur="bereken()"/>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="extra_optie_totaal">Extra optie totaal</label>
-                            <div class="input-group ">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">&euro;</span>
-                                </div>
-                                <input type="number" class="form-control" readonly id="extra_optie_totaal" value="">
-                            </div>
+                            <input type="number" id="abonnement_p_m" max="100" step="5" class="form-control"
+                                   onblur="bereken()"/>
                         </div>
                     </div>
+                    <div class="col-md-3">
+                        <label for="abonnementprijs_totaal">Abonnementprijs totaal</label>
+
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&euro;</span>
+                            </div>
+                            <input type="number" class="form-control" readonly id="abonnementprijs_totaal" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="extra_p_m">Extra optie p/m</label>
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&euro;</span>
+                            </div>
+                            <input type="number" id="extra_p_m" max="100" step="5" class="form-control"
+                                   onblur="bereken()"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="extra_optie_totaal">Extra optie totaal</label>
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&euro;</span>
+                            </div>
+                            <input type="number" class="form-control" readonly id="extra_optie_totaal" value="">
+                        </div>
+                    </div>
+
 
                 </div>
 
                 <h2>Totaal</h2>
-                <p class="text-muted">Als je alles goed ingevuld komt hier een bedrag tussen de 500 en 2000 euro. Klopt het niet?
+                <p class="text-muted">Als je alles goed ingevuld komt hier een bedrag tussen de 500 en 2000 euro. Klopt
+                    het niet?
                     Controleer goed of je de prijs met of zonder korting heb berekend en loop iedere stap nog eens
                     na.</p>
 
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <label for="totaalprijs">Totaalprijs</label>
+                <div class="form-group row">
 
-                            <div class="input-group ">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">&euro;</span>
-                                </div>
-                                <input type="number" class="form-control" readonly="" id="totaalprijs" value="">
+                    <div class="col-md-3">
+                        <label for="totaalprijs">Totaalprijs</label>
+
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&euro;</span>
                             </div>
-
+                            <input type="number" class="form-control" readonly="" id="totaalprijs" value="">
                         </div>
-                        <div class="col-md-3">
-                            <label for="gem_p_m">Gemiddeld per maand</label>
 
-                            <div class="input-group ">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">&euro;</span>
-                                </div>
-                                <input type="number" class="form-control" readonly="" id="gem_p_m" value="">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="gem_p_m">Gemiddeld per maand</label>
+
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&euro;</span>
                             </div>
+                            <input type="number" class="form-control" readonly="" id="gem_p_m" value="">
                         </div>
                     </div>
+
                 </div>
 
-                <input type="submit" class="btn btn-primary" value="Toevoegen aan mijn lijstje">
+                <button type="submit" class="btn btn-primary"><span class="mr-2"><i class="fas fa-plus-circle"></i></span>Toevoegen</button>
 
             </form>
 
@@ -187,7 +181,6 @@
     </article>
 
 </div>
-
 
 
 </body>
