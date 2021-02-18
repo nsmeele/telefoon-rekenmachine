@@ -1,0 +1,44 @@
+{
+  "name": "telefoon-rekenmachine",
+  "version": "1.0.0",
+  "description": "Bereken snel en makkelijk de echte kosten voor je nieuwe telefoon abonnement!",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "chokidar-cli": "^2.1.0",
+    "clean-css-cli": "^5.2.0",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.3.0",
+    "postcss-focus-within": "^4.0.0",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@popperjs/core": "^2.5.4",
+    "bootstrap": "^4.6.0",
+    "postcss": "^8.2.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsmeele/telefoon-rekenmachine.git"
+  },
+  "author": "Nathalie Smeele",
+  "license": "ISC",
+  "scripts": {
+    "compile": "node-sass --output-style=expanded src/scss/ -o dist/css/",
+    "prefix:default": "postcss dist/css/**.css --use=autoprefixer --dir=dist/css",
+    "minify:main": "cleancss -O1 --compatibility=ie7 --output=dist/css/main.min.css dist/css/main.css",
+    "build:front": "npm run compile && run-p prefix:* && run-p minify:*",
+    "watch:scss": "chokidar \"src/scss/**/*.scss\" -c \"run-p build:*\" --initial",
+    "build": "run-p \"build:*\"",
+    "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial"
+  },
+  "bugs": {
+    "url": "https://github.com/nsmeele/telefoon-rekenmachine/issues"
+  },
+  "homepage": "https://github.com/nsmeele/telefoon-rekenmachine#readme",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

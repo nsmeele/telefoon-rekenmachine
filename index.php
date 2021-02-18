@@ -3,17 +3,13 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script type="text/javascript" src="assets/js/math.js"></script>
+    <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 <body>
 
-<div id="page-wrapper">
     <header class="page-header bg-light py-4 border-bottom">
         <div class="container-fluid">
             <h1>Reken en vergelijk!</h1>
@@ -31,7 +27,7 @@
                         <h2>Basis instellingen</h2>
                         <p class="text-muted">Zorgvuldig invullen zorgt voor het beste resultaat</p>
 
-                        <div class="form-group row">
+                        <div class="form-row">
                             <div class="col-md-4 col-12">
                                 <label for="abonnementsduur">Abonnementsduur in maanden </label>
                                 <input type="number" class="form-control" step="6" id="abonnementsduur" onblur="bereken()">
@@ -47,7 +43,7 @@
 
                         <h2>Aanvullende instellingen (optioneel)</h2>
                         <p class="text-muted">Onderstaande instellingen zijn niet verplicht om in te vullen maar helpen voor jezelf om straks een goed overzicht te krijgen.</p>
-                        <div class="form-group row">
+                        <div class="form-row">
                             <div class="col-md-4">
                                 <label class="d-block">
                                     Aanbieder<br>
@@ -72,7 +68,7 @@
                         </div>
 
                         <h2>Kosten</h2>
-                        <div class="form-group row">
+                        <div class="form-row">
                             <div class="col-md col-12">
                                 <label for="toestelprijs">Toestelprijs</label>
 
@@ -95,7 +91,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="form-row">
                             <div class="col-md col-12">
                                 <label for="abonnement_p_m">Abonnement p/m</label>
                                 <div class="input-group ">
@@ -150,7 +146,7 @@
                             Controleer goed of je de prijs met of zonder korting heb berekend en loop iedere stap nog eens
                             na.</p>
 
-                        <div class="form-group row">
+                        <div class="form-row">
 
                             <div class="col-md col-12">
 
@@ -240,9 +236,8 @@
         </div>
     </article>
 
-</div>
-
+    <script type="text/javascript" src="assets/js/math.js"></script>
 
 </body>
 
-</html> 
+</html>
